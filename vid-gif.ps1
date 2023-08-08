@@ -2,11 +2,11 @@
 function mp4_to_gif {
 
 	# generate a custom color palette from input video to boost gif quality
-	.\Videos\Captures\ffmpeg.exe -ss $START_TIME -t $DURATION -i $VIDEO_URI -vf "fps=20,scale=200:-1:flags=lanczos,palettegen" palette.png
+	.\ffmpeg.exe -ss $START_TIME -t $DURATION -i $VIDEO_URI -vf "fps=20,scale=200:-1:flags=lanczos,palettegen" palette.png
 
 	# filter_complex can be adjusted:
 	# fps sets frame rate; scale resizes output width in px
-	.\Videos\Captures\ffmpeg.exe -ss $START_TIME -t $DURATION -i $VIDEO_URI -i palette.png -filter_complex "fps=20,scale=400:-1:flags=lanczos[x];[x][1:v]paletteuse" Videos\Captures\gif\$OUTPUT_GIF
+	.ffmpeg.exe -ss $START_TIME -t $DURATION -i $VIDEO_URI -i palette.png -filter_complex "fps=20,scale=400:-1:flags=lanczos[x];x][1:v]paletteuse" $OUTPUT_GIF
 
 	# delete temporary pallete
 	ri palette.png
