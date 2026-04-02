@@ -214,7 +214,7 @@ Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for details.
 ```
 MIT License
 
-Copyright (c) [YEAR] [YOUR NAME]
+Copyright (c) 2026 asuspades
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
