@@ -50,7 +50,7 @@ scoop install ffmpeg
 1. **Download the script**:
    ```powershell
    # Save to your scripts directory
-   Invoke-WebRequest -Uri "https://raw.githubusercontent.com/yourusername/vid-gif/main/vid-gif.ps1" -OutFile "$HOME\Scripts\vid-gif.ps1"
+   Invoke-WebRequest -Uri "https://raw.githubusercontent.com/asuspades/vid-gif/main/vid-gif.ps1" -OutFile "$HOME\Scripts\vid-gif.ps1"
    ```
 
 2. **Unblock the script** (if downloaded from the internet):
